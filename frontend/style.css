@@ -1,4 +1,11 @@
 body {
+    
+
+      background-image: url("background.png");
+      background-size: cover;        /* L'image couvre tout l'écran */
+      
+      
+
     font-family: Arial, sans-serif;
     background-color:#ad30a7;
     display: flex;
