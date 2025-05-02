@@ -1,47 +1,69 @@
+/* Police de base et fond */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #cf48cf;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3e5f5; /* violet très pâle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
-  .form-container {
-    background-color: rgb(190, 15, 243);
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-  }
+/* Conteneur du formulaire */
+.form-container {
+  background-color: #ce93d8; /* violet pastel */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
 
-  h2 {
-    text-align: center;
-    color: #333;
-  }
+/* Titre */
+h2 {
+  text-align: center;
+  color: #6a1b9a; /* violet foncé */
+  margin-bottom: 25px;
+}
 
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-  }
+/* Étiquettes */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #4a148c;
+  font-weight: bold;
+}
 
-  input, select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+/* Champs de formulaire */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ab47bc; /* violet moyen */
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
 
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #fbf8fc;
-    color: rgb(24, 6, 90);
-    border: none;
-    border-radius: 5px;    cursor: pointer;
-  }
+input:focus {
+  border-color: #7b1fa2;
+  outline: none;
+}
 
-  button:hover {
-    background-color: #b300b3;
-  }
+/* Bouton */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7b1fa2; /* violet principal */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c27b0; /* violet plus clair */
+}

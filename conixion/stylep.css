@@ -1,0 +1,53 @@
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b380c0, #ab59cc);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .landing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #5f079b;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portal-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #6f2adf;
+    color: rgba(224, 214, 214, 0.842);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(26, 6, 51);
+    transition: background-color 0.3s ease;
+  } 
+  h2 {
+    padding: 15px 300px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #6f2adf;
+    color: rgba(224, 214, 214, 0.842);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(155, 86, 21);
+    transition: background-color 0.3s ease;
+    color: violet;
+    font-size: 2.5rem;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+  }  
