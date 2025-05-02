@@ -5,15 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault(); // Empêche l'envoi du formulaire
 
         // Récupération des valeurs
-        const email = document.getElementById("email").value.trim();
+     
         const nom = document.getElementById("nom").value.trim();
         const prenom = document.getElementById("prenom").value.trim();
-        const naissance = document.getElementById("naissance").value;
-        const etablissement = document.getElementById("etablissement").value.trim();
+        const email = document.getElementById("email").value.trim();
         const filiere = document.getElementById("filiere").value.trim();
-
         // Vérification simple
-        if (!email || !nom || !prenom || !naissance || !etablissement || !filiere) {
+        if (!nom || !prenom ||!email|| !filiere) {
             alert("Veuillez remplir tous les champs !");
             return;
         }
