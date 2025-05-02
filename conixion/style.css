@@ -62,12 +62,5 @@ body {
     background-color: #9c27b0;
   }
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('Capture décran 2025-05-01 144929.png') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
   }   
