@@ -7,31 +7,19 @@
   <link rel="stylesheet" href="prof.css">
 </head>
 <body>
-  <div class="container">
+  <div class="landing-container">
     <h1>Créer un nouvel examen</h1>
-    <form id="examForm">
-      <label for="titre">Titre de l’examen :</label>
-      <input type="text" id="titre" name="titre" required>
-
-      <label for="description">Description :</label>
-      <textarea id="description" name="description" required></textarea>
-
-      <label for="public">Public ciblé :</label>
-      <input type="text" id="public" name="public" placeholder="Ex : 2e année MIP - S4 - Groupe A" required>
-
-      <button type="submit">Créer l’examen</button>
-
-      <div id="lienResultat" class="hidden"></div>
-    </form>
+    <div class="landing-container">
+      <form id="examForm">
+          <label for="titre">Titre de l’examen :</label>
+          <input type="text" id="titre" name="titre" required>
+          <label for="description">Description :</label>
+          <textarea id="description" name="description" required></textarea>
+          <label for="public">Public ciblé :</label>
+          <input type="text" id="public" name="public" >
+          <button type="submit">Créer l’examen</button>
+       </form>
+    </div>
   </div>
-
-  <script>
-    document.getElementById('examForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const lienUnique = 'https://examen.app/exam/' + Math.random().toString(36).substring(2, 10);
-      document.getElementById('lienResultat').textContent = 'Lien généré : ' + lienUnique;
-      document.getElementById('lienResultat').classList.remove('hidden');
-    });
-  </script>
 </body>
 </html>
