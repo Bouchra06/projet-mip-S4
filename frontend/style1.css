@@ -1,52 +1,54 @@
-
+/* Style global */
 body {
-  background-image: url("background.png");
-  background-size: cover;        /* L'image couvre tout l'écran */
-background-color:#ad30a7;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-margin: 0;
+  background-color: #f3e5f5; /* Violet très clair */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* Conteneur du formulaire */
 .form-container {
-  background-color: #ce93d8; /* violet pastel */
+  background-color: #ce93d8; /* Violet pastel */
   padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 /* Titre */
 h2 {
   text-align: center;
-  color: #6a1b9a; /* violet foncé */
-  margin-bottom: 25px;
+  color: #6a1b9a; /* Violet foncé */
+  margin-bottom: 30px;
 }
 
-/* Étiquettes */
+/* Labels */
 label {
   display: block;
   margin-bottom: 6px;
-  color: #4a148c;
+  color: #4a148c; /* Violet intense */
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* Champs de formulaire */
 input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 12px;
   margin-bottom: 20px;
-  border: 1px solid #ab47bc; /* violet moyen */
+  border: 1px solid #ab47bc;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: border-color 0.3s ease;
+  font-size: 15px;
 }
 
 input:focus {
-  border-color: #7b1fa2;
+  border-color: #8e24aa; /* Violet plus foncé au focus */
   outline: none;
 }
 
@@ -54,7 +56,7 @@ input:focus {
 button {
   width: 100%;
   padding: 12px;
-  background-color: #7b1fa2; /* violet principal */
+  background-color: #7b1fa2; /* Violet foncé */
   color: white;
   border: none;
   border-radius: 6px;
@@ -63,7 +65,11 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.portal-btn a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+}
 button:hover {
-  background-color: #9c27b0; /* violet plus clair */
+  background-color: #9c27b0; /* Violet plus clair au hover */
 }
