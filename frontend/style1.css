@@ -1,6 +1,6 @@
 /* Style global */
 body {
-  background-color: #f3e5f5; /* Violet très clair */
+  background-color:#ad30a7; /* Violet très clair */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,4 +72,29 @@ button {
 }
 button:hover {
   background-color: #9c27b0; /* Violet plus clair au hover */
+}
+/* Style pour le bouton */
+button {
+  background-color: #8e44ad; /* Violet */
+  color: white; /* Texte en blanc */
+  border: none; /* Pas de bordure */
+  padding: 10px 20px; /* Espacement autour du texte */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Pas de soulignement */
+  display: inline-block; /* Comportement en ligne */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Curseur en forme de main */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+/* Effet au survol du bouton */
+button:hover {
+  background-color: #9b59b6; /* Violet plus clair */
+}
+
+/* Style du lien dans le bouton */
+button a {
+  color: white; /* Texte du lien en blanc */
+  text-decoration: none; /* Pas de soulignement sur le lien */
 }
