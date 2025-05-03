@@ -1,14 +1,14 @@
-body {
-  background-image: url("backrround1.jpg");
-  background-size: cover;        /* L'image couvre tout l'écran */
-  background-color: #f3e5f5; /* violet très pâle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-}
 
+body {
+  background-image: url("background.png");
+  background-size: cover;        /* L'image couvre tout l'écran */
+background-color:#ad30a7;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+}
 /* Conteneur du formulaire */
 .form-container {
   background-color: #ce93d8; /* violet pastel */
