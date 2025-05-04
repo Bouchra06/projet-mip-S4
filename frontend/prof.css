@@ -1,0 +1,80 @@
+/* تعيين الخط العام وتنسيق الجسم */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #005a87;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* شريط التنقل */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0073aa;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* محتوى الصفحة */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #005a87;
+}
+
+/* الروابط داخل المحتوى */
+section ul {
+  padding-left: 20px;
+}
+
+section ul li a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* تذييل الصفحة */
+footer {
+  text-align: center;
+  background-color: #005a87;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+ }

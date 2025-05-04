@@ -5,44 +5,57 @@
   <title>Espace Professeur</title>
   <link rel="stylesheet" href="prof.css">
   <script src="prof.js"></script>
-
 </head>
 <body>
+
   <header>
     <h1>Espace Professeur</h1>
+    <nav>
+      <ul>
+        <li><a href="#infos">Informations</a></li>
+        <li><a href="#cours">Les Cours</a></li>
+        <li><a href="#exercices">Les Exercices</a></li>
+        <li><a href="#examens">Examens</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>Informations</h2>
-    <p>Nom : Prof. Amina El Haddad</p>
-    <p>Matière : Informatique</p>
-     
-  </section>
-  <section>
-    <h2>Les Cours</h2>
-    <ul>
-      <li><a href="#">Cours 1 : HTML</a></li>
-      <li><a href="#">Cours 2 : CSS</a></li>
-    </ul>
-  </section>
+  <main>
+    <section id="infos">
+      <h2>Informations</h2>
+      <p><strong>Nom :</strong> Prof. Amina El Haddad</p>
+      <p><strong>Matière :</strong> Informatique</p>
+    </section>
 
-  <section>
-    <h2>Les Exercices</h2>
-    <ul>
-      <li><a href="#">Exercice HTML</a></li>
-      <li><a href="#">Exercice CSS</a></li>
-    </ul>
-  </section>
+    <section id="cours">
+      <h2>Les Cours</h2>
+      <ul>
+        <li><a href="#">Cours 1 : HTML</a></li>
+        <li><a href="#">Cours 2 : CSS</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Examens</h2>
-    <ul>
-      <li><a href="examen.html">Examen QCM 1</a></li>
-    </ul>
-</section>
+    <section id="exercices">
+      <h2>Les Exercices</h2>
+      <ul>
+        <li><a href="#">Exercice HTML</a></li> 
+        <li><a href="#">Exercice CSS</a></li>
+      </ul>
+    </section>
+
+    <section id="examens">
+      <h2>Examens</h2>
+      <ul>
+        <li><a href="examen.html">Examen QCM 1</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Prof. Amina El Haddad - Tous droits réservés.</p>
+  </footer>
+  <h1>Bienvenue !</h1>
+  <a href="examen.html">Aller à la deuxième page</a>
+  <button class="qcm" id="examen"><a href="examen.html">qcm</a></button>
 </body>
 </html>
-
-
-
-
