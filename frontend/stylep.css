@@ -1,7 +1,4 @@
-
-body {
-    
-      
+body {  
       background-size: cover;        /* L'image couvre tout l'écran */
     background-color:#ad30a7;
     display: flex;

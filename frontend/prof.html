@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="prof.js"></script>
      <link rel=" stylesheet"href ="style.css">
+=======
+  <meta charset="UTF-8">
+  <title>Espace Professeur</title>
+  <link rel="stylesheet" href="prof.css">
+  <script src="prof.js"></script>
+>>>>>>> c57b8538995d6ff4013db87965b277cc295d9d1a
 </head>
 <body>
-             <div class="form-container">
-                <h2>Portrail etudiant</h2>
-                <form>
-                    <label for="titre">Titre de l’examen :</label>
-                    <input type="text" id="titre" name="titre" required>
-                    <label for="description">Description :</label>
-                    <textarea id="description" name="description" required></textarea>
-                    <label for="public">Public ciblé :</label>
-                    <input type="text" id="public" name="public" >
-                    <button type="submit">Créer l’examen</button>
-                </form>
-            </div>
+
+  <header>
+    <h1>Espace Professeur</h1>
+    <nav>
+      <ul>
+        <li><a href="#infos">Informations</a></li>
+        <li><a href="#cours">Les Cours</a></li>
+        <li><a href="#exercices">Les Exercices</a></li>
+        <li><a href="#examens">Examens</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="infos">
+      <h2>Informations</h2>
+      <p><strong>Nom :</strong> Prof. Amina El Haddad</p>
+      <p><strong>Matière :</strong> Informatique</p>
+    </section>
+
+    <section id="cours">
+      <h2>Les Cours</h2>
+      <ul>
+        <li><a href="#">Cours 1 : HTML</a></li>
+        <li><a href="#">Cours 2 : CSS</a></li>
+      </ul>
+    </section>
+
+    <section id="exercices">
+      <h2>Les Exercices</h2>
+      <ul>
+        <li><a href="#">Exercice HTML</a></li> 
+        <li><a href="#">Exercice CSS</a></li>
+      </ul>
+    </section>
+
+    <section id="examens">
+      <h2>Examens</h2>
+      <select id="question-type">
+        <option value="">-- Choisir le type --</option>
+        <option value="direct">Question directe</option>
+        <option value="qcm">QCM</option>
+      </select>
+      <ul>
+        <li><a href="examen.html">Examen QCM 1</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Prof. Amina El Haddad - Tous droits réservés.</p>
+  </footer>
+  <h1>Bienvenue !</h1>
+  <a href="ensei.html">Aller à la deuxième page</a>
+  <button class="qcm" id="examen"><a href="ensei.html">qcm</a></button>
 </body>
 </html>

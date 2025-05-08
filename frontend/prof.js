@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.getElementById('create-exam').addEventListener('click', () => {
     const title = document.getElementById('title').value.trim();
     const description = document.getElementById('description').value.trim();
@@ -86,3 +87,20 @@ document.getElementById('create-exam').addEventListener('click', () => {
     }
   }
   
+=======
+// Afficher un message de bienvenue lorsque la page se charge
+window.onload = function() {
+  alert("Bienvenue dans l'espace professeur !");
+};
+
+// Ajouter un message lorsqu'on clique sur un lien
+document.addEventListener("DOMContentLoaded", function () {
+  const liens = document.querySelectorAll("a");
+
+  liens.forEach(lien => {
+    lien.addEventListener("click", function (event) {
+      alert("Vous avez cliqué sur : " + lien.textContent);
+    });
+  });
+});
+>>>>>>> c57b8538995d6ff4013db87965b277cc295d9d1a

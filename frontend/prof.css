@@ -1,85 +1,80 @@
+/* تعيين الخط العام وتنسيق الجسم */
 body {
-  background-color: #f3e5f5; /* Violet clair, pastel */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #005a87;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* شريط التنقل */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin:1000000;
+  background-color: #0073aa;
 }
 
-.form-container {
-  background-color: #170a1a; /* Violet pastel */
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 450px;
+nav ul li {
+  margin: 0 15px;
 }
 
-h2 {
-  text-align: center;
-  color: #691b9ae1; /* Violet foncé */
-  margin-bottom: 25px;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  color: #4a148c;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ab47bc;
-  border-radius: 6px;
-  background-color: #fff;
-  transition: border-color 0.3s ease;
-  font-size: 16px;
-}
-
-textarea {
-  resize: vertical; /* Permet de redimensionner uniquement verticalement */
-}
-
-input:focus,
-textarea:focus {
-  border-color: #7b1fa2;
-  outline: none;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #7b1fa2;
+nav ul li a {
   color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #9c27b0;
-}
-
-#examLinkContainer {
-  margin-top: 30px;
-  text-align: center;
-}
-
-#examLinkContainer a {
-  color: #7b1fa2;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
 }
 
-#examLinkContainer a:hover {
+nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* محتوى الصفحة */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #005a87;
+}
+
+/* الروابط داخل المحتوى */
+section ul {
+  padding-left: 20px;
+}
+
+section ul li a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* تذييل الصفحة */
+footer {
+  text-align: center;
+  background-color: #005a87;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+ }
