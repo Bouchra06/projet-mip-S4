@@ -3,33 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>QCM 1</title>
-    <script src="examen.js"></script>
-     <link rel=" stylesheet"href ="examen.css">
+  <script src="examen.js" defer></script>
+  <link rel="stylesheet" href="examen.css">
 </head>
 <body>
-  <h1>QCM 1 - HTML & CSS</h1>
-  <form>
-    <p>1. Quelle balise est utilisée pour créer un lien ?</p>
-    <label><input type="radio" name="q1"> &lt;link&gt;</label><br>
-    <label><input type="radio" name="q1"> &lt;a&gt;</label><br>
-    <label><input type="radio" name="q1"> &lt;href&gt;</label><br>
+  
+  <h1>Quiz </h1>
+  <form id="qcm-form">
+    <div>
+      <p>1. Quelle balise est utilisée pour un lien ?</p>
+      <label><input type="radio" name="q1" value="a"> &lt;a&gt;</label><br>
+      <label><input type="radio" name="q1" value="b"> &lt;p&gt;</label><br>
+      <label><input type="radio" name="q1" value="c"> &lt;div&gt;</label>
+    </div>
 
-    <p>2. Quelle propriété CSS change la couleur du texte ?</p>
-    <label><input type="radio" name="q2"> background-color</label><br>
-    <label><input type="radio" name="q2"> color</label><br>
-    <label><input type="radio" name="q2"> font-style</label><br>
+    <div>
+      <p>2. Quelle propriété CSS change la couleur du texte ?</p>
+      <label><input type="radio" name="q2" value="background"> background</label><br>
+      <label><input type="radio" name="q2" value="color"> color</label><br>
+      <label><input type="radio" name="q2" value="font"> font</label>
+    </div>
 
-    <p>3. Quelle est la bonne structure d’un document HTML ?</p>
-    <label><input type="radio" name="q3"> head - body - html</label><br>
-    <label><input type="radio" name="q3"> html - head - body</label><br>
-    <label><input type="radio" name="q3"> body - html - head</label><br>
+    <div>
+      <p>3. Quel est l'ordre correct des balises HTML ?</p>
+      <label><input type="radio" name="q3" value="html-head-body"> html &gt; head &gt; body</label><br>
+      <label><input type="radio" name="q3" value="body-html-head"> body &gt; html &gt; head</label><br>
+      <label><input type="radio" name="q3" value="head-body-html"> head &gt; body &gt; html</label>
+    </div>
 
-    <br>
-    <button type="submit">Envoyer</button>
-    <div class="resultat" id="resultat"></div>
-  </br>
-  <a href="prof.html">Retour à la page d’accueil</a>
+    <button type="submit">Valider</button>
+    <a href="prof.html">Retour à la page d’accueil</a>
+    
   </form>
+
+  <div id="resultat"></div>
 
 </body>
 </html>
+
+
