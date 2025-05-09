@@ -9,14 +9,13 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 // Connexion à MongoDB
-mongoose.connect('mongodb://localhost:27017/mydb', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
+mongoose.connect('mongodb://localhost:27017/nomDeVotreDB')
+  .then(() => {
     console.log('✅ Connecté à MongoDB');
-}).catch(err => {
+  })
+  .catch(err => {
     console.error('❌ Erreur de connexion à MongoDB :', err);
-});
+  });
 
 // Schéma utilisateur
 const userSchema = new mongoose.Schema({
