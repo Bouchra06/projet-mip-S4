@@ -1,4 +1,4 @@
-/* تعيين الخط العام وتنسيق الجسم */
+ /* تعيين الخط العام وتنسيق الجسم */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -77,4 +77,6 @@ footer {
   color: white;
   padding: 10px 0;
   margin-top: 20px;
- }
+}
+
+
