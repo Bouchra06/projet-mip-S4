@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.getElementById('create-exam').addEventListener('click', () => {
     const title = document.getElementById('title').value.trim();
     const description = document.getElementById('description').value.trim();
@@ -17,45 +16,7 @@ document.getElementById('create-exam').addEventListener('click', () => {
     container.innerHTML = ''; // reset
   
     if (type === 'direct') {
-      container.innerHTML = `
-        <label>Énoncé :</label>
-        <textarea id="enonce" required></textarea>
-  
-        <label>Réponse attendue :</label>
-        <input type="text" id="reponse" required>
-  
-        <label>Tolérance (%) :</label>
-        <input type="number" id="tolerance" min="0" max="100" value="10">
-  
-        <label>Durée (secondes) :</label>
-        <input type="number" id="duration" required>
-  
-        <label>Note :</label>
-        <input type="number" id="note" required>
-  
-        <button onclick="ajouterQuestionDirecte()">Ajouter question directe</button>
-      `;
-    } else if (type === 'qcm') {
-      container.innerHTML = `
-        <label>Énoncé :</label>
-        <textarea id="enonce" required></textarea>
-  
-        <label>Options (séparées par ;)</label>
-        <input type="text" id="options" placeholder="ex: réponse A;réponse B;réponse C">
-  
-        <label>Bonnes réponses (index, ex: 0,2)</label>
-        <input type="text" id="corrects">
-  
-        <label>Durée (secondes) :</label>
-        <input type="number" id="duration" required>
-  
-        <label>Note :</label>
-        <input type="number" id="note" required>
-  
-        <button onclick="ajouterQCM()">Ajouter QCM</button>
-      `;
-    }
-  });
+      container.innerHTML = 
   
   function ajouterQuestionDirecte() {
     const enonce = document.getElementById('enonce').value;
@@ -86,8 +47,6 @@ document.getElementById('create-exam').addEventListener('click', () => {
       console.log('commit: ajout QCM');
     }
   }
-  
-=======
 // Afficher un message de bienvenue lorsque la page se charge
 window.onload = function() {
   alert("Bienvenue dans l'espace professeur !");
@@ -101,6 +60,3 @@ document.addEventListener("DOMContentLoaded", function () {
     lien.addEventListener("click", function (event) {
       alert("Vous avez cliqué sur : " + lien.textContent);
     });
-  });
-});
->>>>>>> c57b8538995d6ff4013db87965b277cc295d9d1a
