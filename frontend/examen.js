@@ -1,18 +1,42 @@
-document.getElementById("qcmForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // empêcher l'envoi du formulaire
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("qcm-form");
+  const resultat = document.getElementById("resultat");
 
-  let score = 0;
-  const total = 3;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  // Récupérer les réponses sélectionnées
-  const q1 = document.querySelector('input[name="q1"]:checked');
-  const q2 = document.querySelector('input[name="q2"]:checked');
-  const q3 = document.querySelector('input[name="q3"]:checked');
+    // Réponses correctes
+    const bonnesReponses = {
+      q1: "a",
+      q2: "color",
+      q3: "html-head-body"
+    };
 
-  if (q1 && q1.value === "vrai") score++;
-  if (q2 && q2.value === "vrai") score++;
-  if (q3 && q3.value === "vrai") score++;
+    let score = 0;
 
-  // Afficher le résultat
-  document.getElementById("resultat").textContent ='Votre score est ${score} / ${total}';
+    for (let question in bonnesReponses) {
+      const selectedInput = form.querySelector('input[name=${question}]:checked');
+      const allInputs = form.querySelectorAll(input[name="${question}"]);
+
+      allInputs.forEach(input => {
+        const label = input.parentElement;
+        label.classList.remove("correct", "incorrect"); // Nettoyage des classes précédentes
+      });
+
+      if (selectedInput) {
+        const label = selectedInput.parentElement;
+        if (selectedInput.value === bonnesReponses[question]) {
+          label.classList.add("correct");
+          score++;
+        } else {
+          label.classList.add("incorrect");
+        }
+      }
+    }
+
+    // Affichage du résultat à la fin
+    resultat.textContent =('Votre score est : ${score}/3');
+    resultat.classList.add("affiche");
+  });
 });
+
