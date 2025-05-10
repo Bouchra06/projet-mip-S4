@@ -1,0 +1,40 @@
+/* Centrage sur toute la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f3e5f5; /* fond violet clair */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  
+  /* Conteneur pour positionner le bouton */
+  .button-container {
+    text-align: center;
+  }
+  
+  /* Bouton violet très grand */
+  .big-purple-btn {
+    display: inline-block;
+    background-color: #8A2BE2;
+    color: #fff;
+    padding: 20px 48px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #6A0DAD;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(138, 43, 226, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Effet au survol */
+  .big-purple-btn:hover {
+    background-color: #6A0DAD;
+    transform: scale(1.05);
+    box-shadow: 0 8px 22px rgba(106, 13, 173, 0.5);
+  }
+  
