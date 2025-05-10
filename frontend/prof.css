@@ -1,82 +1,123 @@
- /* تعيين الخط العام وتنسيق الجسم */
-body {
-  font-family: Arial, sans-serif;
+/* Réinitialisation de base pour supprimer les marges et padding par défaut */
+* {
   margin: 0;
   padding: 0;
-  background-color: #851071;
-  color: #e70d8c;
+  box-sizing: border-box;
 }
 
-/* رأس الصفحة */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Couleur de fond claire */
+  color: #4b0082; /* Texte violet foncé */
+  line-height: 1.6;
+}
+
 header {
-  background-color: #5e0761;
-  color: rgb(241, 235, 241);
+  background-color: #8000ff; /* Violet vif pour l'entête */
+  color: white;
   padding: 20px 0;
   text-align: center;
 }
 
-/* شريط التنقل */
+header h1 {
+  font-size: 2.5rem;
+}
+
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  justify-content: center;
-  background-color: hsl(310, 70%, 26%);
+  padding: 10px 0;
 }
 
 nav ul li {
+  display: inline-block;
   margin: 0 15px;
 }
 
 nav ul li a {
-  color: #e7a0de;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #e0aaff; /* Violet clair au survol */
 }
 
-/* محتوى الصفحة */
 main {
-  padding: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
   margin-bottom: 30px;
-  background-color: #f3f1f3;
-  padding: 15px;
+  background-color: #e6ccff; /* Violet pâle pour les sections */
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px #dd4bca1a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #470639;
+  font-size: 2rem;
+  color: #4b0082; /* Violet foncé pour les titres */
 }
 
-/* الروابط داخل المحتوى */
-section ul {
-  padding-left: 20px;
+ul {
+  list-style: none;
 }
 
-section ul li a {
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
   text-decoration: none;
-  color: #f70bc4;
+  color: #8000ff;
+  font-size: 1.1rem;
 }
 
-section ul li a:hover {
-  text-decoration: underline;
+ul li a:hover {
+  color: #5f00cc; /* Violet plus foncé au survol */
 }
 
-/* تذييل الصفحة */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #8000ff;
+  background-color: #f9f9f9;
+}
+
 footer {
+  background-color: #8000ff; /* Violet vif pour le pied de page */
+  color: white;
   text-align: center;
-  background-color: #e909b8;
-  color: rgb(245, 239, 245);
-  padding: 10px 0;
-  margin-top: 20px;
+  padding: 20px;
 }
 
+footer p {
+  font-size: 1rem;
+}
 
+button {
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #5f00cc; /* Violet plus sombre au survol */
+}
