@@ -59,8 +59,48 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
-    background-color: #9c27b0;
-  }
   
-    
+/* Style du bouton */
+button {
+  background-color: #8A2BE2; /* Couleur de fond violette */
+  border: none; /* Pas de bordure */
+  color: white; /* Texte en blanc */
+  padding: 14px 20px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  display: inline-block; /* Pour permettre un bon alignement */
+  font-size: 16px; /* Taille du texte */
+  margin: 4px 2px; /* Marges autour du bouton */
+  cursor: pointer; /* Curseur pointer pour l'interaction */
+  border-radius: 8px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond */
+}
+
+/* Lorsque le bouton est survolé */
+button:hover {
+  background-color: #6A0DAD; /* Couleur de fond plus foncée au survol */
+}
+
+/* Style pour le lien à l'intérieur du bouton */
+button a {
+  color: white; /* Texte du lien en blanc */
+  text-decoration: none; /* Pas de soulignement */
+  font-weight: bold; /* Gras pour le texte */
+}
+
+button a:hover {
+  text-decoration: underline; /* Ajouter un soulignement au survol du lien */
+}
+
+/* Style pour le lien à l'intérieur du bouton */
+button a {
+  color: white; /* Texte du lien en blanc */
+  text-decoration: none; /* Pas de soulignement */
+  font-weight: bold; /* Gras pour le texte */
+}
+
+button a:hover {
+  text-decoration: underline; /* Ajouter un soulignement au survol du lien */
+}
+
+
