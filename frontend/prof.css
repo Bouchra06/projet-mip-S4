@@ -3,14 +3,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #c415bb;
+  color: #f5f2f5;
 }
 
 /* رأس الصفحة */
 header {
-  background-color: #005a87;
-  color: white;
+  background-color: #e740ec;
+  color: rgb(228, 210, 228);
   padding: 20px 0;
   text-align: center;
 }
@@ -22,7 +22,7 @@ nav ul {
   margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
-  background-color: #0073aa;
+  background-color: hsl(310, 73%, 50%);
 }
 
 nav ul li {
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #e7a0de;
   text-decoration: none;
   font-weight: bold;
 }
@@ -46,14 +46,14 @@ main {
 
 section {
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: #d8cfd8;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px #dd4bca1a;
 }
 
 h2 {
-  color: #005a87;
+  color: #c526a3;
 }
 
 /* الروابط داخل المحتوى */
@@ -63,7 +63,7 @@ section ul {
 
 section ul li a {
   text-decoration: none;
-  color: #0073aa;
+  color: #ec1fc0;
 }
 
 section ul li a:hover {
@@ -73,7 +73,7 @@ section ul li a:hover {
 /* تذييل الصفحة */
 footer {
   text-align: center;
-  background-color: #005a87;
+  background-color: #e752c7;
   color: white;
   padding: 10px 0;
   margin-top: 20px;
