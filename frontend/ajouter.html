@@ -12,61 +12,19 @@
 
     <div class="form-group">
       <label>Type de question :</label>
+    </div><div class="form-group">
+        <label for="enonce">Énoncé :</label>
+        <textarea id="enonce" name="enonce" rows="3"></textarea>
+      </div>
       <div class="question-type">
         <label><input type="radio" name="type" value="directe"> Question directe</label>
         <label><input type="radio" name="type" value="qcm"> QCM</label>
       </div>
     </div>
-
-    <div class="form-group">
-      <label for="enonce">Énoncé :</label>
-      <textarea id="enonce" name="enonce" rows="3"></textarea>
-    </div>
-
-    <div class="form-group">
-      <label for="media">Média (image, audio, vidéo) :</label>
-      <input type="file" id="media" name="media" accept="image/,audio/,video/*">
-    </div>
-
-    
-    <div class="form-group">
-      <label for="reponse">Réponse attendue :</label>
-      <input type="text" id="reponse" name="reponse">
-    </div>
-
-    <div class="form-group">
-      <label for="tolerance">Tolérance (%) :</label>
-      <input type="number" id="tolerance" name="tolerance" value="10">
-    </div>
-
-   
-    <div class="form-group">
-      <label>Options (QCM) :</label>
-      <div class="options-container">
-        <div class="option">
-          <input type="text" placeholder="Option 1">
-          <input type="checkbox" title="Bonne réponse">
-        </div>
-        <div class="option">
-          <input type="text" placeholder="Option 2">
-          <input type="checkbox" title="Bonne réponse">
-        </div>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="note">Note attribuée :</label>
-      <input type="number" id="note" name="note" min="0" step="1">
-    </div>
-
-    <div class="form-group">
-      <label for="duree">Durée (en secondes) :</label>
-      <input type="number" id="duree" name="duree" min="1">
-    </div>
-
-    <button type="submit" class="submit-btn">Ajouter la question</button>
-  </form>
   
+      <button type="submit" class="submit-btn">Ajouter la question</button>
+    </form>
+    
     
   </body>
   </html>
