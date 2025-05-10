@@ -10,8 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const prenom = document.getElementById("prenom").value.trim();
         const email = document.getElementById("email").value.trim();
         const filiere = document.getElementById("filiere").value.trim();
+        const sexe =document.getElementById("sexe").value.trim();
+        const Établissement =document.getElementById("Établissement ").value.trim();
         // Vérification simple
-        if (!nom || !prenom ||!email|| !filiere) {
+        if (!nom || !prenom ||!email|| !filiere||!sexe||!Établissement)  {
             alert("Veuillez remplir tous les champs !");
             return;
         }
