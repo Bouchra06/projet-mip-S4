@@ -107,3 +107,52 @@ landing-container h2 {
   text-transform: uppercase;
   letter-spacing: 10px;
 }
+/* Style du bouton violet */
+#examen {
+  background-color: #8A2BE2; /* Violet principal */
+  border: 2px solid #7A1B8D; /* Bordure légèrement plus foncée */
+  padding: 12px 24px;
+  border-radius: 30px; /* Coins arrondis */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+/* Le lien à l'intérieur du bouton */
+#examen a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Effet au survol du bouton */
+#examen:hover {
+  background-color: #6A0DAD; /* Violet plus foncé */
+  box-shadow: 0 6px 12px rgba(106, 13, 173, 0.4);
+}
+
+#examen a:hover {
+  text-decoration: underline;
+}
+/* Style du bouton violet */
+.submit-btn {
+  background-color: #8A2BE2; /* Violet vif */
+  color: white; /* Texte blanc */
+  border: 2px solid #7A1B8D; /* Bordure violette foncée */
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border-radius: 30px; /* Coins arrondis */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(138, 43, 226, 0.3); /* Ombre douce */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.submit-btn:hover {
+  background-color: #6A0DAD; /* Violet plus foncé */
+  box-shadow: 0 6px 12px rgba(106, 13, 173, 0.4);
+}
